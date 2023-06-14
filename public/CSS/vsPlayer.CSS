@@ -1,0 +1,127 @@
+.logo {
+    margin-top: 1rem;
+    width: 60px;
+    height: 60px;
+  }
+  
+.title {
+    margin-top: 1rem;
+  }
+  
+.img-container {
+    left: 360px;
+    top: 240px;
+    width: 180px;
+    height: 160px;
+    border-radius: 30px;
+    margin-top: 3rem;
+  }
+  
+.img-container:hover {
+    background-color: #c4c4c4;
+  }
+  
+.img-container img {
+    width: 80px;
+    height: 60px;
+    margin: 56px 0 0 47.5px;
+  }
+  
+.back {
+    color: #f9b23d;
+    height: 87px;
+    width: 55px;
+    left: 37px;
+    top: 12px;
+    border-radius: nullpx;
+    font-family: Open Sans;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    text-align: left;
+  }
+  
+body {
+    background-color: #9c835f;
+    text-align: center;
+    color: #f9b23d;
+  }
+  
+.vs {
+    margin-top: 12rem;
+    margin-right: 4rem;
+    font-weight: 700;
+    font-size: 144px;
+    font-family: 'Open-Sans';
+    color: #bd0000;
+  }
+  
+.rectangle:hover {
+    background-color: #c4c4c4;
+  }
+  
+.refresh {
+    margin-top: 16rem;
+  }
+  
+.img-container.selected {
+    background-color: #c4c4c4;
+    border-radius: 30px;
+    width: 180px;
+    height: 160px;
+  }
+  
+.win {
+    background-color: #4c9654;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    transform: rotate(-28.87deg);
+    width: 271.11px;
+    height: 166.93px;
+    border-radius: 10px;
+    margin-left: 3rem;
+  }
+  
+.lose {
+    background-color: #4c9654;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    transform: rotate(-28.87deg);
+    width: 271.11px;
+    height: 166.93px;
+    border-radius: 10px;
+    margin-left: 3rem;
+  }
+  
+.tie {
+    background-color: #035b0c;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: first baseline;
+    font-size: 60px;
+    transform: rotate(-28.87deg);
+    width: 271.11px;
+    height: 166.93px;
+    border-radius: 10px;
+    margin-left: 3rem;
+  }
+  
+.playCom {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  

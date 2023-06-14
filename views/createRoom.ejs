@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Room</title>
+</head>
+<body>
+  <h1>Create Room</h1>
+  <form action="/create-room" method="POST">
+    <input type="hidden" name="roomId" value="<%= roomId %>">
+    <label for="playerType">Choose player type:</label><br>
+    <input type="radio" id="playerTypeHuman" name="playerType" value="human" required>
+    <label for="playerTypeHuman">Play with another player</label><br>
+    <input type="radio" id="playerTypeComputer" name="playerType" value="computer">
+    <label for="playerTypeComputer">Play with computer</label><br><br>
+    <input type="submit" value="Start Game">
+  </form>
+</body>
+</html>

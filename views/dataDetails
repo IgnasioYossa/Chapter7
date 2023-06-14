@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserGameBiodata List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Biodata List</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Date of Birth</th>
+                    <th scope="col">Sex</th>
+                    <th scope="col">Game ID</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Password</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% userGameBiodata.forEach((biodata) => { %>
+                    <tr>
+                        <th scope="row"><%= biodata.id %></th>
+                        <td><%= biodata.full_name %></td>
+                        <td><%= biodata.date_of_birth.toISOString().split('T')[0] %></td>
+                        <td><%= biodata.sex %></td>
+                        <td><%= biodata.game_id %></td>
+                        <td><%= biodata.UserGame.username %></td>
+                        <td><%= biodata.UserGame.password %></td>
+                        <td>
+                            <a href="/usergame/biodata/update/<%= biodata.id %>" class="btn btn-primary">Update</a>
+                        </td>
+                        <td>
+                            <a href="/usergame/biodata/delete/<%= biodata.id %>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
